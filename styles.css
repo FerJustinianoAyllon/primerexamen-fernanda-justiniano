@@ -80,9 +80,9 @@ body {
   border: 2px solid #000; 
   padding: 1rem;
   text-align: center;
-  width: 180px;          /* cuadrícula fija en escritorio */
+  width: 180px;          
   display: flex;
-  flex-direction: column; /* Imagen arriba + info abajo */
+  flex-direction: column; 
   align-items: center;
   justify-content: flex-start;
   background-color: #fff;   
@@ -103,7 +103,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  border: none; /* borde ya lo tiene el contenedor */
+  border: none; 
 }
 
 .producto h3 {
@@ -115,7 +115,7 @@ body {
   }
 
    .boton-comprar {
-    margin-top: auto;         /* botón al final */
+    margin-top: auto;      
     padding: 0.3rem 0.7rem;
     font-size: 0.9rem;
     border: 1px solid #000;
@@ -167,7 +167,7 @@ body {
   .producto {
     width: 100%;
     max-width: 350px;
-    flex-direction: row;       /* Imagen izquierda + info derecha */
+    flex-direction: row;      
     text-align: left;
     align-items: center;
     padding: 0.8rem;
