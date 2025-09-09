@@ -1,0 +1,111 @@
+/* Reinicio y base */
+* {
+  margin: 10px;      
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  border: 1px solid #000;  
+}
+
+/* Encabezado */
+.encabezado {
+  border: 2px solid #000;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #fff;
+}
+
+/* Navegación interna */
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marca {
+  font-size: 1.2rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Sección hero */
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  border: 2px solid #000;
+  margin: 1rem 0;
+  background-color: #fff;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+}
+
+/* Productos */
+.productos {
+  padding: 1rem;
+  border: 2px solid #000;
+  margin: 1rem 0;
+  background-color: #fff;
+}
+
+.productos h2 {
+  margin-bottom: 1rem;
+}
+
+/* Lista de productos */
+.lista-productos {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Cada producto */
+.producto {
+  border: 2px solid #000;
+  padding: 1rem;
+  text-align: center;
+}
+
+.imagen-producto {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #000;
+  margin-bottom: 0.5rem;
+}
+
+.precio {
+  margin: 0.5rem 0;
+}
+
+.boton-comprar {
+  padding: 0.5rem 1rem;
+  border: 1px solid #000;
+  background: none;
+  cursor: pointer;
+}
+
+/* Footer */
+.pie {
+  text-align: center;
+  border: 2px solid #000;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #fff;
+}
+
+
