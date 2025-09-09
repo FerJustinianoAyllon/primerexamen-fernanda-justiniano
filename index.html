@@ -7,58 +7,61 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="encabezado">
+    <a href="#contenido" class="salto-contenido">Saltar al contenido principal</a>
+  
+    <header class="encabezado">
     <nav class="navegacion">
       <h1 class="marca">MANACO</h1>
+      <button class="boton-menu" aria-label="Abrir menú de navegación">☰</button>
       <ul class="menu">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
-  </header>
+    </header>
 
-  <main id="inicio">
-    <section class="hero">
-      <h2>Calzado que impulsa tu paso</h2>
-    </section>
+    <main id="contenido">
+       <section class="hero" id="inicio">
+        <h2>Calzado que impulsa tu paso</h2>
+        </section>
 
-    <section class="productos">
-      <h2>Productos</h2>
-      <ul class="lista-productos">
-        <li>
-          <article class="producto">
-            <h3>Producto 1</h3>
-            <figure class="imagen-producto">
-
-            </figure>
-            <p class="precio">$00.00</p>
-            <button class="boton-comprar">Comprar</button>
-          </article>
-        </li>
-        <li>
-          <article class="producto">
-            <h3>Producto 2</h3>
-            <figure class="imagen-producto">
-
-            </figure>
-            <p class="precio">$00.00</p>
-            <button class="boton-comprar">Comprar</button>
-          </article>
-        </li>
-        <li>
-          <article class="producto">
-            <h3>Producto 3</h3>
-            <figure class="imagen-producto">
-
-            </figure>
-            <p class="precio">$00.00</p>
-            <button class="boton-comprar">Comprar</button>
-          </article>
-        </li>
-      </ul>
-    </section>
-  </main>
+        <section class="productos">
+        <h2>Productos</h2>
+        <ul class="lista-productos">
+            <li>
+            <article class="producto">
+                <figure class="imagen-producto">
+                    <img src="img/producto1.jpg" alt="Zapato deportivo">
+                </figure>
+                <h3>Producto 1</h3>
+                <p class="precio">$00.00</p>
+                <button class="boton-comprar">Comprar</button>
+            </article>
+            </li>
+            <li>
+            <article class="producto">
+                <figure class="imagen-producto">
+                    <img src="img/producto2.jpg" alt="Botín">
+                </figure>
+                <h3>Producto 2</h3>
+                <p class="precio">$00.00</p>
+                <button class="boton-comprar">Comprar</button>
+            </article>
+            </li>
+            <li>
+            <article class="producto">
+                <figure class="imagen-producto">
+                    <img src="img/producto3.jpg" alt="Zapato formal">
+                </figure>
+                <h3>Producto 3</h3>
+                <p class="precio">$00.00</p>
+                <button class="boton-comprar">Comprar</button>
+            </article>
+            </li>
+        </ul>
+        </section>
+    </main>
 
   <footer class="pie">
     <p>Copyright 2025 MANACO</p>
