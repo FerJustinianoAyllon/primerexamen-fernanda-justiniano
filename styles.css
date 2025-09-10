@@ -1,7 +1,8 @@
 /* Reinicio y base */
 * {
-  margin: 10px;      
+  margin: 0;
   padding: 0;
+  box-sizing: border-box; 
 }
 
 body {
@@ -16,18 +17,22 @@ body {
   padding: 1rem;
   margin: 1rem 0;
   background-color: #fff;
+  display: flex;   
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navegacion {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .marca {
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
+/* Menú de navegación */
 .menu {
   list-style: none;
   display: flex;
@@ -40,13 +45,25 @@ body {
   font-weight: bold;
 }
 
+/* Toggle hamburguesa */
+.menu-toggle {
+  display: none;   
+}
+
+.boton-menu {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;   
+  user-select: none;
+}
+
 /* Sección hero */
 .hero {
   text-align: center;
   padding: 2rem 1rem;
   border: 2px solid #000;
   margin: 1rem 0;
-  background-color: #fff;
+  background-color: #d7d2d2;
 }
 
 .hero h2 {
@@ -114,13 +131,13 @@ body {
     margin: 0.3rem 0;
   }
 
-   .boton-comprar {
-    margin-top: auto;      
-    padding: 0.3rem 0.7rem;
-    font-size: 0.9rem;
-    border: 1px solid #000;
-    background: none;
-    cursor: pointer;
+.boton-comprar {
+  margin-top: auto;      
+  padding: 0.3rem 0.7rem;
+  font-size: 0.9rem;
+  border: 1px solid #000;
+  background: none;
+  cursor: pointer;
 }
 
 /* Footer */
@@ -158,15 +175,46 @@ body {
     color: blue;
   }
 
+  /*hamburguesa activo */
+  .boton-menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;  
+    flex-direction: column;
+    gap: 0;
+    background: #fff;
+    border: 1px solid #000;
+    position: absolute;
+    top: 60px;  
+    right: 10px;
+    width: 150px;
+    padding: 0.5rem;
+  }
+
+  .menu-toggle:checked ~ .menu {
+    display: flex;  
+  }
+  .lista-productos > li {
+    width: 100%;
+  }
+
   .lista-productos {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .lista-productos > li {
+    width: 100%;
   }
 
   .producto {
     width: 100%;
-    max-width: 350px;
+    max-width: none;
     flex-direction: row;      
     text-align: left;
     align-items: center;
@@ -177,14 +225,40 @@ body {
     width: 80px;
     height: 80px;
     margin: 0 1rem 0 0;
+    flex-shrink: 0;
+  }
+
+  .producto h3,
+  .producto .precio {
+    margin: 0;
+    width: 100%;
+  }
+
+  .info-producto {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;
   }
 
   .producto h3 {
     margin: 0;
+    font-size: 0.9rem;   
+   
   }
 
+  .precio {
+    margin: 0.2rem 0 0 0;
+    font-size: 0.85rem; 
+  }
+
+  .producto .precio {
+  order: 0;
+  font-size: 0.9rem;
+}
+
   .boton-comprar {
-    margin-top: 0.3rem;
+     display: none;
   }
 }
 
